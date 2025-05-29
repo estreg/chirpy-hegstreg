@@ -13,3 +13,21 @@ Content-Type: application/json
 {
   "body": "This is a very long message that should definitely exceed the 140 character limit that Chirpy has set for all chirps to ensure they stay concise and to the point without being too verbose or lengthy in their content which would make them invalid according to the rules."
 }
+
+### Test profane words
+
+Post http://localhost:8080/api/validate_chirp
+Content-Type: application/json
+
+{
+  "body": "This chirp has kerfuffle and this sharbert is full of FORNAX"
+}
+
+### Test empty chirps
+
+Post http://localhost:8080/api/validate_chirp
+Content-Type: application/json
+
+{
+  "body": ""
+}
