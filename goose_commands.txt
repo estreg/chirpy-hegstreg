@@ -1,0 +1,5 @@
+
+
+goose postgres <connection_string> up
+
+goose postgres <connection_string> down
